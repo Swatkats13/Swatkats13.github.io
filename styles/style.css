@@ -1,0 +1,46 @@
+/* style.css */
+
+/* Set the overall background color to white */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#e7dfd8; /* background color */
+    color: #caccbe; /* text color (will be overridden in the navigation bar) */
+    
+    background-image: url('../images/watermark.png'); /* Path to the background image */
+    background-size: cover; /* Make the background image cover the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-attachment: fixed; /* Fix the background image while scrolling */
+
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #e7dfd8; /* color for the nav bar */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for navigation links */
+nav a {
+    color: #281f15; /* text color for links */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Style for the main content area */
+main {
+    padding: 20px;
+    margin: 20px;
+    background-color: #eae9e4; /* color for the content area */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    color: #281f15; /* Default text color */
+}
