@@ -39,7 +39,8 @@ nav a:hover {
 main {
     padding: 20px;
     margin: 20px;
-    background-color: #eae9e4; /* color for the content area */
+    /*background-color: #eae9e4; /* color for the content area */
+    background-color: none;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
     color: #281f15; /* Default text color */
