@@ -28,7 +28,7 @@
         Transformers library.
     </p>
     <p>
-        Key concepts include: Subword Tokenization (Byte Pair Encoding in GPT-2), Logits to Probabilities with Softmax, Argmax-based sampling, Autoregressive Text Generation,
+        Key concepts covered: Subword Tokenization (Byte Pair Encoding in GPT-2), Logits to Probabilities with Softmax, Argmax-based sampling, Autoregressive Text Generation,
         Comparison between manual generation and generate() method
         
     </p>
@@ -48,7 +48,7 @@
 
     </p>
     <p>
-        Key concepts include: Loading and preprocessing the MNIST dataset using <code>fetch_openml</code>, Training a neural network using <code>MLPClassifier</code>,
+        Key concepts covered: Loading and preprocessing the MNIST dataset using <code>fetch_openml</code>, Training a neural network using <code>MLPClassifier</code>,
             Evaluating classification performance on train and test sets, Visualizing correct and incorrect predictions
     </p>
     <p>
@@ -88,19 +88,27 @@
 
 
 
-        <section></section>
-            <h2>Project 3: Singular Value Decomposition(SVD) Implementation</h2>
-            <p>
-                The project focussed on achieveing the following goals:
-                1. Using  SVD to perform dimensionality reduction on a dataset.
-                2. Exploring the effect of the number of dimensions on the performance of a classifier,
-                3. Visualizing the results for comparison and analysis.
-                
-            </p>
-            <p>
-                <a href="https://github.com/Swatkats13/jains-assignment-3.git">Github Link</a>
-            </p>
-        </section>
+       <section>
+    <h2>Project 3: Transfer Learning for Fashion Image Classification using MobileNetV3</h2>
+    <p>
+        In this project, I explored <strong>transfer learning</strong> using a pre-trained <code>MobileNetV3</code> architecture to classify 
+        fashion items from the <a href="https://github.com/zalandoresearch/fashion-mnist" target="_blank">Fashion-MNIST</a> dataset. 
+        This dataset consists of 28×28 grayscale images of clothing items like shirts, sneakers, and coats, serving as a drop-in replacement for MNIST digits.
+        <strong>MobileNetV3</strong> is a lightweight convolutional neural network designed for efficiency on mobile and edge devices. In this project, 
+        I fine-tuned the model by replacing the final classification layer to suit our 10 fashion categories and freezing the rest of the network. This 
+        approach significantly reduces training time while leveraging powerful pre-learned image representations.
+    </p>
+    <p>
+        Key Concepts covered: Transfer learning with pre-trained CNNs, Modifying classifier layers for custom tasks,
+        Freezing and unfreezing network parameters, Resizing grayscale images to fit color CNN input formats, Efficient training with only a small subset of parameters,
+        Model evaluation and visualization of classification results
+    
+    </p>
+    <p>
+        <a href="https://github.com/Swatkats13/Projects/blob/main/Transfer%20Learning%20using%20MobileNet/Transfer%20learning%20using%20MobileNetV3.ipynb">GitHub Link</a>
+    </p>
+</section>
+
 
         <section></section>
             <h2>Project 4: Latent Semantic Analysis (LSA) Search Engine Webpage</h2>
