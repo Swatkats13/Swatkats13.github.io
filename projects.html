@@ -111,7 +111,7 @@
 
 
         <section>
-    <h2>Project 4: Prompt-Based Spam Email Classifier using a Foundation Model</h2>
+    <h2>Project 4: Prompt-Based Spam Email Classifier using a Foundation Model - Prompt Based</h2>
     <p>
         In this project, I built a spam email classifier using a <strong>foundation model</strong> accessed through prompting—without any training or fine-tuning. 
         The goal was to showcase how a pre-trained large language model (LLM) can be used "as-is" to solve classification problems through smart prompt engineering.
@@ -138,7 +138,7 @@
 
 
         <section>
-    <h2>Project 5: Sentiment Classification Using DistilBERT on IMDB Dataset</h2>
+    <h2>Project 5: Sentiment Classification Using DistilBERT on IMDB Dataset - Linear Probing</h2>
     <p>
         In this project, I fine-tuned a <strong>DistilBERT</strong> model (a lightweight version of BERT) using the 
         <a href="https://huggingface.co/datasets/imdb" target="_blank">IMDB movie review dataset</a> to classify movie reviews 
@@ -169,26 +169,37 @@
 
 
 
-        <section></section>
-        <h2>Project 6: Linear Regression </h2>
-        <p>
-            In this project, I explore the impact of changing parameters on linear regression. 
-            The goal was to create an interactive webpage to demonstrate how modifying these parameters affects regression results, 
-            especially when there is no actual relationship between X and Y. By tweaking these settings, we can observe how randomness 
-            can influence the slope and intercept in a regression model.
+       <section>
+    <h2>Project 6: Fine-Tuning DistilBERT for SMS Spam Classification - Full Fine Tuning</h2>
+    <p>
+        In this project, I built a binary text classifier by <strong>fully fine-tuning a DistilBERT model</strong> using the 
+        <a href="https://huggingface.co/datasets/sms_spam" target="_blank">SMS Spam dataset</a> from Hugging Face. The task involved 
+        classifying short text messages as either <em>spam</em> or <em>not spam</em>, a practical application of NLP in communication security.
+        Unlike prompt-based or head-only training, this project involved **unfreezing all layers** of the pre-trained transformer model, 
+        allowing the entire DistilBERT architecture to adapt to the task through backpropagation. This is known as <strong>full fine-tuning</strong>, 
+        which typically results in better performance on downstream tasks with enough data. This project demonstrates a robust end-to-end training pipeline for a real-world classification task using transformer models.
+        It also emphasizes the benefits and trade-offs of full fine-tuning compared to parameter-efficient alternatives.
+    </p>
 
+    
 
-        <p>
-
-
-            <a href="https://github.com/Swatkats13/jains-assignment-6.git">Github Link</a>
-        </p>
+    <p>
+        Key steps included:
         
+            Loading and splitting the SMS Spam dataset into training and testing subsets,
+            Tokenizing text data using the <code>AutoTokenizer</code> from Hugging Face,
+            Fully fine-tuning <code>distilbert-base-uncased</code> using the <code>Trainer</code> API,
+            Evaluating model accuracy on unseen test messages,
+            Manually inspecting misclassified examples for qualitative error analysis
+        
+    </p>
 
-        <video width="640" height="360" controls>
-            <source src="videos/Regression.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+
+    <p>
+        <a href="https://github.com/Swatkats13/Projects/blob/main/Bert%20Spam%20Classifier%20-%20Full%20Fine%20Tuning/cleaned_notebook.ipynb">GitHub Link</a>
+    </p>
+</section>
+
 
 
     </section>
