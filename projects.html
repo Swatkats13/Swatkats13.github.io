@@ -110,20 +110,32 @@
 </section>
 
 
-        <section></section>
-            <h2>Project 4: Latent Semantic Analysis (LSA) Search Engine Webpage</h2>
-            <p>
-                In this project, I built an interactive web application that demonstrates LSA implementation in a search engine.
-                The search engine takes a user’s query, perform LSA on a pool of documents, 
-                and returns the top documents based on cosine similarity.
-            <p>
-                <a href="https://github.com/Swatkats13/jains-assignment-4.git">Github Link</a>
-            </p>
-            <video width="640" height="360" controls>
-                <source src="videos/lsa.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
+        <section>
+    <h2>Project 4: Prompt-Based Spam Email Classifier using a Foundation Model</h2>
+    <p>
+        In this project, I built a spam email classifier using a <strong>foundation model</strong> accessed through prompting—without any training or fine-tuning. 
+        The goal was to showcase how a pre-trained large language model (LLM) can be used "as-is" to solve classification problems through smart prompt engineering.
+        I used the <code>sms_spam</code> dataset from HuggingFace, which contains real SMS messages labeled as SPAM or NOT SPAM. The model was prompted to classify a batch of messages based on their content, and its output was parsed and evaluated against ground truth labels.
+    </p>
+    <p>
+        The project was carried out in two stages:
+        <ul>
+            <li><strong>Zero-shot classification:</strong> The LLM was asked to classify SMS messages with no prior examples.</li>
+            <li><strong>Few-shot classification:</strong> The prompt was augmented with a few labeled examples before asking the model to classify new, unlabeled messages. This improved its accuracy significantly.</li>
+        </ul>
+    </p>
+
+    <p>
+        Key concepts covered: Loading and preparing a labeled dataset from HuggingFace, Constructing zero-shot and few-shot prompts for classification tasks,
+            Parsing LLM JSON responses and evaluating prediction accuracy, Using LLMs for real-world tasks without fine-tuning
+        
+    </p>
+
+    <p>
+        <a href="https://github.com/Swatkats13/Projects/blob/main/Prompt%20Based%20Spam%20Email%20Classifier%20using%20a%20Foundation%20Model/cleaned_notebook.ipynb">GitHub Link</a>
+    </p>
+</section>
+
 
         <section></section>
             <h2>Project 5: K-Nearest Neighbors Kaggle Competition </h2>
