@@ -137,20 +137,36 @@
 </section>
 
 
-        <section></section>
-            <h2>Project 5: K-Nearest Neighbors Kaggle Competition </h2>
-            <p>
-                In this project, I implemented a K-Nearest Neighbors (KNN) model from scratch to predict customer 
-                churn for a bank. The goal was to identify customers who are likely to leave the bank based on historical 
-                data and submit the predictions in a mini Kaggle competition.
-                <!--<img src="images/Kaggle.png" alt="Kaggle Score" width="500"> -->
+        <section>
+    <h2>Project 5: Sentiment Classification Using DistilBERT on IMDB Dataset</h2>
+    <p>
+        In this project, I fine-tuned a <strong>DistilBERT</strong> model (a lightweight version of BERT) using the 
+        <a href="https://huggingface.co/datasets/imdb" target="_blank">IMDB movie review dataset</a> to classify movie reviews 
+        as either <em>positive</em> or <em>negative</em>. This task showcases the power of <strong>transformer-based models</strong> 
+        in real-world natural language processing (NLP) applications. I used the <strong>Hugging Face Transformers</strong> library to tokenize the dataset, set up the classification model, 
+        and train it using the high-level <code>Trainer</code> API. To accelerate training and preserve compute, I froze the base 
+        DistilBERT model and trained only the classification head. 
+        This project demonstrates end-to-end fine-tuning of a foundation model using minimal code, while still maintaining flexibility 
+        and transparency in each training step.
+    </p>
 
+    <p>
+        Key steps included:
+        
+            Preprocessing the dataset using <code>AutoTokenizer</code> with padding and truncation,
+            Loading a pre-trained <code>distilbert-base-uncased</code> model and configuring it for binary classification,
+            Training using Hugging Face's <code>Trainer</code> and evaluating accuracy on the test set,
+            Analyzing model predictions and identifying misclassified examples for error analysis
+        
+    </p>
 
-            <p>
-                <a href="https://github.com/Swatkats13/jains-assigment-5.git">Github Link</a>
-            </p>
-            
-        </section>
+    
+
+    <p>
+        <a href="https://github.com/Swatkats13/Projects/blob/main/Bert%20Sentiment%20Classifier%20-%20Linear%20Probing/BERT_Sentiment_Classifier.ipynb">GitHub Link</a>
+    </p>
+</section>
+
 
 
         <section></section>
