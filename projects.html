@@ -202,27 +202,35 @@
 
 
 
-    </section>
+    <section>
+  <h2>Project 7: Lightweight Fine-Tuning of DistilBERT for SMS Spam Detection using LoRA</h2>
+  <p>
+    In this project, I implemented <strong>parameter-efficient fine-tuning (PEFT)</strong> using <strong>LoRA (Low-Rank Adaptation)</strong> on the 
+    <a href="https://huggingface.co/datasets/sms_spam" target="_blank">SMS Spam</a> dataset to build a binary classifier that detects whether an SMS message is <em>spam</em> or <em>not spam</em>. 
+    Unlike full fine-tuning where all model weights are updated, PEFT updates only a small subset of parameters—making it a lightweight and scalable strategy, especially in resource-constrained environments.
+    The project highlights how <strong>DistilBERT</strong> can be effectively adapted to a new classification task using LoRA modules inserted into its transformer layers. 
+    The model was evaluated before and after fine-tuning using the Hugging Face Trainer API to measure performance gains with minimal compute cost.
+    After fine-tuning, the model’s accuracy improved significantly—from <strong>~81%</strong> to <strong>~98%</strong>—proving that PEFT via LoRA is both efficient and highly effective.
 
-    <h2>Project 7: Hypothesis Testing and Confidence Intervals in Linear Regression </h2>
-    <p>
-        In this project, I extended my previous work from project 6 to include hypothesis 
-        testing and confidence intervals through simulations. I enhanced the interactive webpage to 
-        allow users to perform hypothesis tests on the slope or intercept of the regression line and 
-        generate confidence intervals based on simulations.
+  </p>
 
-
-    <p>
-
-
-        <a href="https://github.com/Swatkats13/jains-assignment-7.git">Github Link</a>
-    </p>
+   <p>
+    <strong>Key Concepts Covered:</strong>
     
+      Understanding the difference between full fine-tuning and parameter-efficient fine-tuning (PEFT),
+      Applying <code>LoRA</code> (Low-Rank Adaptation) to reduce training overhead while retaining performance,
+      Choosing target modules (<code>q_lin</code> and <code>v_lin</code>) in the transformer architecture for LoRA injection,
+      Using the Hugging Face <code>Trainer</code> API for training and evaluation workflows,
+      Measuring model performance before and after fine-tuning using accuracy as the evaluation metric
+    
+  </p>
 
-    <video width="640" height="360" controls>
-        <source src="videos/Regression2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+
+  <p>
+    <a href="https://github.com/Swatkats13/Projects/blob/main/LoRa%20based%20PEFT%20Spam%20Classifier/LoRA_based_PEFT_Spam_Classifier_.ipynb" target="_blank">GitHub Link</a>
+  </p>
+</section>
+
 
 
 <section>
