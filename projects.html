@@ -288,21 +288,34 @@
 </section>
 
 
-<h2>Project 10: Image Search </h2>
-<p>
-    In this project, the goal was to implement a simplified version of Google Image Search.
-<p>
+<section>
+  <h2>Project 10: Vector Database Basics with LanceDB</h2>
+  <p>
+    In this project, I explored the core functionalities of <strong>LanceDB</strong>, a modern open-source vector database
+    designed for high-performance retrieval in generative AI, recommendation systems, and semantic search applications.
+    As a hands-on task, I created a toy dataset of cat and dog embeddings and queried it to find the most similar animals.
+    I also generated and indexed a 100,000-vector dataset to simulate high-volume search scenarios and measure performance gains from ANN indexing.
+    This project was a great introduction to building scalable AI systems that blend structured metadata with vector-based retrieval.
 
-    <a href="https://github.com/Swatkats13/jains-assignment-10.git">Github Link</a>
-</p>
+  </p>
 
-<video width="640" height="360" controls>
-    <source src="videos/ImageSearch.mov" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+  <p><strong>Key concepts covered:</strong></p>
+  Understanding what vector databases are and why they are needed in modern AI pipelines,
+    Creating and managing LanceDB tables with vectors and structured metadata,
+    Performing <strong>vector search</strong> using both Euclidean and cosine distances,
+    Filtering results with SQL-like conditions alongside vector queries,
+    Building <strong>Approximate Nearest Neighbor (ANN)</strong> indices (IVFPQ) for fast retrieval on large datasets,
+    Benchmarking query latency with and without ANN indexing,
+    Versioning and rollback support for debugging data errors,
+    Deleting records and managing table lifecycle operations
+  
 
-
+  
+  <p>
+    <a href="https://github.com/Swatkats13/Projects/blob/main/Vector%20Database%20Basics%20with%20LanceDB/Vector_Database_Basics_with_LanceDB.ipynb" target="_blank">GitHub Link</a>
+  </p>
 </section>
+
        
     </main>
 </body>
