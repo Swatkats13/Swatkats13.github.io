@@ -316,6 +316,38 @@
   </p>
 </section>
 
+<section>
+  <h2>Project 11: Movie Recommender System using LanceDB and Matrix Factorization</h2>
+  <p>
+    In this project, I built a simple yet effective <strong>movie recommendation engine</strong> using matrix factorization and 
+    <strong>LanceDB</strong>, an open-source vector database. The recommender is based on collaborative filtering using 
+    the <a href="https://grouplens.org/datasets/movielens/latest/" target="_blank">MovieLens Latest Small Dataset</a>, 
+    which includes user ratings for 9,000 movies.  As a demo, I queried the system with popular titles like <em>"Moana (2016)"</em> and 
+    <em>"Rogue One: A Star Wars Story (2016)"</em> and received reasonable recommendations based on user similarity.
+    This project showcases the potential of vector databases in delivering <strong>personalized recommendations</strong> in real time.
+  
+  </p>
+
+  <p><strong>Key concepts covered:</strong></p>
+        Pivoting user-movie ratings into a sparse ratings matrix,
+        Using <strong>Singular Value Decomposition (SVD)</strong> for matrix factorization to generate movie embeddings,
+        Combining ratings data with metadata such as movie titles, genres, and IMDb IDs,
+        Creating and populating a LanceDB table using <strong>PyDantic schema</strong>,
+        Performing vector similarity search in LanceDB to recommend similar movies,
+        Building a recommendation function that returns IMDb links for top suggestions
+  
+
+  
+   
+
+  <p>
+    <a href="https://github.com/Swatkats13/Projects/blob/main/Movie%20Recommender%20using%20SVD/Movie_Recommender_System_using_LanceDB_and_Matrix_Factorization.ipynb" target="_blank">
+       GitHub Link
+    </a>
+  </p>
+</section>
+
+
        
     </main>
 </body>
