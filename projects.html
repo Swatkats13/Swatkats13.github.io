@@ -335,10 +335,6 @@
         Creating and populating a LanceDB table using <strong>PyDantic schema</strong>,
         Performing vector similarity search in LanceDB to recommend similar movies,
         Building a recommendation function that returns IMDb links for top suggestions
-  
-
-  
-   
 
   <p>
     <a href="https://github.com/Swatkats13/Projects/blob/main/Movie%20Recommender%20using%20SVD/Movie_Recommender_System_using_LanceDB_and_Matrix_Factorization.ipynb" target="_blank">
@@ -346,6 +342,35 @@
     </a>
   </p>
 </section>
+
+<section>
+  <h2>Project 12: Multimodal Image Search with CLIP and LanceDB</h2>
+  <p>
+    This project demonstrates a <strong>multimodal search engine</strong> that retrieves relevant images from a dataset using <em>natural language queries</em>. We leverage the powerful <a href="https://huggingface.co/openai/clip-vit-base-patch32" target="_blank">CLIP model</a> by OpenAI, which can embed both images and text into the same latent space, enabling cross-modal retrieval using semantic similarity.
+  </p>
+
+  <p>
+    The model was fine-tuned using the <a href="https://huggingface.co/datasets/zh-plus/tiny-imagenet" target="_blank">Tiny ImageNet</a> dataset, where each image is encoded into a 512-dimensional vector. The search pipeline stores these embeddings in <strong>LanceDB</strong>, an open-source vector database, enabling efficient retrieval via vector similarity.
+  </p>
+
+  <p><strong>Key concepts covered:</strong></p>
+  
+    Using <code>CLIP</code> for joint image and text embeddings,
+    Building a <strong>semantic search engine</strong> over image data,
+    Creating and querying vector tables using <code>LanceDB</code>,
+    Converting and storing image data efficiently in databases,
+    Implementing cross-modal retrieval using cosine similarity
+  
+
+  <p>
+    The final system allows users to type any descriptive text like <em>"a fish swimming"</em> or <em>"a yellow flower"</em>, and it returns the most semantically relevant images.
+  </p>
+
+  <p>
+    <a href="https://github.com/Swatkats13/Projects/blob/main/Multimodal%20Search%20with%20CLIP%20and%20LanceDB/cleaned_notebook.ipynb" target="_blank">GitHub Link</a>
+  </p>
+</section>
+
 
 
        
