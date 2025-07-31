@@ -8,7 +8,7 @@ body {
     background-color:#e7dfd8; /* background color */
     color: #caccbe; /* text color (will be overridden in the navigation bar) */
     
-    background-image: url('../images/Background3.jpg'); /* Path to the background image */
+    background-image: url('../images/Background1.jpg'); /* Path to the background image */
     background-size: cover; /* Make the background image cover the entire page */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
